@@ -8,16 +8,15 @@
  - struttura di un file python, syntax error, runtime errors
 
 ## Lesson 2:
+ - numeri
+ - stringhe
+ - liste, tuple, insiemi, dictionari
+
+## Lesson 3:
  - pypi
  - installare librerie esterne e usarle
  - virtual environments: cosa sono, cosa servono, crearli pro e contro
 
-## Lesson 3:
- - numeri
- - stringhe
- - liste
- - insiemi
- - dictionary
 
 ## Lesson 4:
  - funzioni
