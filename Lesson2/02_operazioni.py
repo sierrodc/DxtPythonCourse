@@ -14,3 +14,6 @@ print(abs(3.14)) # parte intera
 
 print(pow(2, 3))
 print(2 ** 3)
+
+print(3 / 0)
+print(3.0 / 0)

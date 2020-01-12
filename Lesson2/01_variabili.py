@@ -1,19 +1,19 @@
-import sys
-#variabile: etichetta riutilizzabile contenente un valore salvato in memoria.
+# variabile: etichetta riutilizzabile contenente un valore salvato in memoria.
 
 # questi sono numeri:
+import sys
 numero_intero = 5
 numero_reale = 2.7
 numero_complesso = 1+1j
 
 # questa è una stringa di testo
-stringa = "Questa è una stringa" # lunga 20 caratteri
+stringa = "Questa è una stringa"  # lunga 20 caratteri
 stringa2 = 'Anche questa è una stringa'
 stringa3 = "Perchè l'interpreter accetta entrambe?"
 stringa4 = 'Perchè l\'interpreter accetta entrambe?'
+stringa5 = input("Scrivi qualcosa\n")
 
-
-#stampo il contenuto
+# stampo il contenuto
 print(numero_intero)
 print(numero_intero + numero_intero)
 print(numero_reale)
@@ -35,7 +35,6 @@ print(sys.getsizeof(stringa))
 
 
 # conversioni di tipo
-# print(3.0/0)
 print(int(numero_reale))
 print(complex(numero_reale))
 print("numero reale convertito a intero: " + str(int(numero_reale)))
@@ -46,7 +45,7 @@ print(numero_intero)
 print(type(numero_intero))
 print("Numero intero : " + numero_intero)
 print("Numero intero : " + str(numero_intero))
-#print("Numero reale convertito a intero: " + int(numero_reale))
+print("Numero reale convertito a intero: " + int(numero_reale))
 print(float(numero_intero))
 
 # Curiosità
@@ -60,4 +59,4 @@ print(numero_reale_moltogrande+1)
 print(type(numero_reale_moltogrande))
 print(sys.getsizeof(numero_reale_moltogrande))
 
-#print(sys.float_info)
+# print(sys.float_info)

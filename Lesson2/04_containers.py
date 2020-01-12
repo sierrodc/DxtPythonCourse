@@ -1,7 +1,7 @@
-#[List]: collezione ordinata e modificabile, duplicati ammessi
-#(Tuple): collezione ordinata e non modificabile, duplicati ammessi
-#{Set}:  collezione non ordinata e modificabile, duplicati non ammessi
-#{key:val}: collezione chiave-valore, non ordinata e modificabile. duplicati non ammessi
+# [List]: collezione ordinata e modificabile, duplicati ammessi
+# (Tuple): collezione ordinata e non modificabile, duplicati ammessi
+# {Set}:  collezione non ordinata e modificabile, duplicati non ammessi
+# {key:val}: collezione chiave-valore, non ordinata e modificabile. duplicati non ammessi
 
 # -------------------------------
 # ------------ LIST  ------------
@@ -16,10 +16,10 @@ print(lista)
 lista.append("cinque")
 lista.insert(0, "zero")
 print(lista)
-print(len(lista)) # lunghezza lista
+print(len(lista)) # lunghezza list
 # con la lista si può implementare uno STACK (LIFO) o una QUEUE (FIFO)
 
-#WARNING
+# WARNING
 lista[2] = 3
 print(lista)
 
@@ -28,7 +28,7 @@ print(lista)
 # -------------------------------
 tupla = ("uno", "tre", "tre") # = tuple(["uno", "due", "tre"])
 print(type(tupla))
-tupla[1] = "due"
+#tupla[1] = "due"
 print(tupla)
 print("uno" in tupla)
 
@@ -36,7 +36,7 @@ print("uno" in tupla)
 # ------------  SET  ------------
 # -------------------------------
 insieme = {"uno", "tre", "tre"} #= set(["uno", "due", "tre"])
-insieme[1] = "ciao"
+#insieme[1] = "ciao"
 print(type(insieme))
 insieme.add("quattro")
 insieme.add("quattro")
@@ -46,7 +46,7 @@ insieme.remove("uno")
 print(insieme)
 insieme.discard("uno")
 print(insieme)
-insieme.remove("uno")
+#insieme.remove("uno")
 print(insieme)
 
 # -------------------------------
