@@ -7,6 +7,7 @@ print(str[-1])
 print(str[0:5])
 print(str[6:-4])
 print(str[0:-1:2])
+print(str[0::2]) ######### QUESTION: per mostrare anche l'ultimo carattere, basta non mettere il limite di destra ma solo start e step
 
 
 print(len(str))

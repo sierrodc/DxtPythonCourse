@@ -6,6 +6,9 @@
 # -------------------------------
 # ------------ LIST  ------------
 # -------------------------------
+
+lista = [None] * 10 ######### QUESTION: per preallocare una lista di 10 items
+
 lista = ["uno", "due", "tre", "quattro"]
 print(type(lista))
 print(lista)
