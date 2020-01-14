@@ -1,5 +1,6 @@
 str = "hello world"
 
+
 # stringa come array
 print(str[0])
 print(str[-1])
@@ -7,12 +8,14 @@ print(str[0:5])
 print(str[6:-4])
 print(str[0:-1:2])
 
+
 print(len(str))
 # alcuni "metodi" della "classe" str
 print(str.upper())
 print(str.replace("o", "@"))
 print(str.replace("o", "@", 1))
 print(str.split(" "))
+
 
 # formattazione
 numero = 0.5

@@ -28,7 +28,7 @@ print(lista)
 # -------------------------------
 tupla = ("uno", "tre", "tre") # = tuple(["uno", "due", "tre"])
 print(type(tupla))
-#tupla[1] = "due"
+tupla[1] = "due"
 print(tupla)
 print("uno" in tupla)
 
@@ -36,7 +36,7 @@ print("uno" in tupla)
 # ------------  SET  ------------
 # -------------------------------
 insieme = {"uno", "tre", "tre"} #= set(["uno", "due", "tre"])
-#insieme[1] = "ciao"
+insieme[1] = "ciao"
 print(type(insieme))
 insieme.add("quattro")
 insieme.add("quattro")
@@ -46,7 +46,7 @@ insieme.remove("uno")
 print(insieme)
 insieme.discard("uno")
 print(insieme)
-#insieme.remove("uno")
+insieme.remove("uno")
 print(insieme)
 
 # -------------------------------
@@ -79,3 +79,8 @@ for i in dic:
     print(i)
 for i in dic:
     print(f"{i}={dic[i]}")
+
+import json
+dic_2_json = json.dumps(dic)
+new_dict = json.loads(dic_2_json)
+print(dic_2_json)

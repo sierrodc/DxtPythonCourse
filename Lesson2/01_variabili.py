@@ -1,10 +1,11 @@
 # variabile: etichetta riutilizzabile contenente un valore salvato in memoria.
+import sys
 
 # questi sono numeri:
-import sys
 numero_intero = 5
 numero_reale = 2.7
 numero_complesso = 1+1j
+
 
 # questa è una stringa di testo
 stringa = "Questa è una stringa"  # lunga 20 caratteri
@@ -20,12 +21,16 @@ print(numero_reale)
 print(numero_complesso)
 print(numero_complesso + numero_intero)
 print(stringa)
+print(stringa2)
+del stringa2
+print(stringa2)
 
 # stampo il tipo di ogni variabile
 print(type(numero_intero))
 print(type(numero_reale))
 print(type(numero_complesso))
 print(type(stringa))
+
 # stampo la memoria occupata in bytes per ogni variabile
 print(sys.getsizeof(numero_intero))
 print(sys.getsizeof(numero_reale))
@@ -39,7 +44,6 @@ print(int(numero_reale))
 print(complex(numero_reale))
 print("numero reale convertito a intero: " + str(int(numero_reale)))
 
-
 numero_intero = "3.14"
 print(numero_intero)
 print(type(numero_intero))
@@ -50,12 +54,15 @@ print(float(numero_intero))
 
 # Curiosità
 numero_intero_moltogrande = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+print(numero_intero_moltogrande)
 print(numero_intero_moltogrande+1)
 print(type(numero_intero_moltogrande))
 print(sys.getsizeof(numero_intero_moltogrande))
 
 numero_reale_moltogrande = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.99999999999999999999999999
+
 print(numero_reale_moltogrande+1)
+print(numero_reale_moltogrande)
 print(type(numero_reale_moltogrande))
 print(sys.getsizeof(numero_reale_moltogrande))
 
