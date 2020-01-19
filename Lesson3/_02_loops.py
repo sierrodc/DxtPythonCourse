@@ -16,6 +16,8 @@ for i in range(1, 10, 2):
     elif i == 7:
         break
     print(i)
+else:
+    print('uscito da for senza break')
 print(i)
 
 # -------------------------
@@ -25,6 +27,8 @@ i = 0
 while i < 10:
     print(i)
     i += 1 # i = i + 1
+else:
+    print('uscito da while senza break')
 
 # -------------------------
 # ----- COMPREHENSION -----
