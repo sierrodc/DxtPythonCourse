@@ -19,6 +19,10 @@ print(lista)
 print(len(lista)) # lunghezza list
 # con la lista si può implementare uno STACK (LIFO) o una QUEUE (FIFO)
 
+# QUESTION: Come prealloco una lista di 100 elementi?
+# RESPONSE: ... in python utile fino a un certo punto...
+x = [None]*100
+
 # WARNING
 lista[2] = 3
 print(lista)

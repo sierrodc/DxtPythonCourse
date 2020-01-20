@@ -7,7 +7,9 @@ print(str[-1])
 print(str[0:5])
 print(str[6:-4])
 print(str[0:-1:2])
-
+# QUESTION: come faccio a prendere anche l'ultimo carattere?
+# RESPONSE: basta non mettere il limite destro, solo start e step
+print(str[0::2])
 
 print(len(str))
 # alcuni "metodi" della "classe" str
