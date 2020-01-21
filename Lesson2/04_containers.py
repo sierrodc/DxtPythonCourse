@@ -6,9 +6,6 @@
 # -------------------------------
 # ------------ LIST  ------------
 # -------------------------------
-
-lista = [None] * 10 ######### QUESTION: per preallocare una lista di 10 items
-
 lista = ["uno", "due", "tre", "quattro"]
 print(type(lista))
 print(lista)
@@ -21,6 +18,10 @@ lista.insert(0, "zero")
 print(lista)
 print(len(lista)) # lunghezza list
 # con la lista si può implementare uno STACK (LIFO) o una QUEUE (FIFO)
+
+# QUESTION: Come prealloco una lista di 100 elementi?
+# RESPONSE: ... in python utile fino a un certo punto...
+x = [None]*100
 
 # WARNING
 lista[2] = 3

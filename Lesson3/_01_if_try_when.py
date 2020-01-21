@@ -44,6 +44,7 @@ else:
 finally:
     print("Sempre eseguito (i.e.: chiudi file)")
 
+# slide
 
 try:
     value = int(input("Insert a number\n"))
@@ -61,14 +62,24 @@ finally:
     print("Sempre eseguito (i.e.: chiudi file)")
 
 
-# ----------------- WHEN --------------------
+# ----------------- WITH --------------------
+try:
+    f = open('C:/Users/rober/Desktop/test.txt')
+    for line in f:
+        print(line)
+    # ....
+finally:
+    f.close()
+
+
+
+# equivalente a 
+
 with open('C:/Users/rober/Desktop/test.txt') as f:
     for line in f:
         print(line)
+    # ....
 
-# equivalente a 
-try:
-    f = open('C:/Users/rober/Desktop/test.txt')
-    # ...
-finally:
-    f.close()
+# meglio usare il with
+
+

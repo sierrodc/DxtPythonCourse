@@ -6,16 +6,18 @@ print(cosh(pi))
 
 print(rnd.randint(1, 10))
 
-startTime = time.time()
+startTime = time.time() # seconds since epoch = 01/01/1970 00:00:00
 print(startTime)
 time.sleep(1.5)
 print(f"Elapsed: {time.time() - startTime}")
+
 
 ### import from where?!?!
 import sys 
 print(sys.executable)
 for path in sys.path:
     print(path)
+
 
 # attenzione al flusso di codice
 import to_import._03_to_import as toImp
