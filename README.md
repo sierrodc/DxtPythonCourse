@@ -10,13 +10,12 @@
 ## Lesson 2:
  - numeri
  - stringhe
- - liste, tuple, insiemi, dictionari
+ - liste, tuple, insiemi, dizionari
 
 ## Lesson 3:
  - pypi
  - installare librerie esterne e usarle
  - virtual environments: cosa sono, cosa servono, crearli pro e contro
-
 
 ## Lesson 4:
  - funzioni
@@ -28,7 +27,7 @@
 ## Lesson 5:
  - classi
  - costruttori e metodi
- - proprietà private e pubbliche
+ - proprietà private, pubbliche e protected
  - ereditarietà
 
 ## Lesson 6:
