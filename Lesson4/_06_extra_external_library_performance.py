@@ -1,6 +1,4 @@
-
-# performance
-# performance listA * listB
+import sys
 from operator import mul
 from timeit import default_timer as perf_timer
 import numpy as np
@@ -18,13 +16,6 @@ def StampaTempoFunzione(description:str):
             return result
         return func_wrapper
     return decorator
-
-num_el = 10_000 # 1_000_000 # 10_000_000
-listA = list(range(0, num_el, 1))
-listB = list(range(-num_el, num_el, 2))
-
-listAnp = np.array(range(0, num_el, 1))
-listBnp = np.array(range(-num_el, num_el, 2))
 
 
 # METHOD 1: fullyPython
@@ -45,8 +36,27 @@ def usingNumpy(npa, npb):
 # METHOD 4: NUMPY NO ALLOCATION
 @StampaTempoFunzione("METHOD 4: Numpy no alloc")
 def usingNumpyNoAlloc(npa, npb):
-    res = np.multiply(npa, npb, out=npa)
+    res = np.multiply(npa, npb, out=npa, dtype=np.int)
 
+
+# object definition
+try:
+    if len(sys.argv) > 1:
+        num_el = int(sys.argv[1])
+    else:
+        num_el =  10_000
+except:
+    num_el =  10_000 # 1_000_000 # 10_000_000
+
+print(f"Numbers of elements: {num_el:,.2f} total size: {num_el*4/1024/1024:,.2f} Mb")
+
+listA = list(range(0, num_el, 1))
+listB = list(range(-num_el, num_el, 2))
+
+listAnp = np.array(listA, dtype=np.int)
+listBnp = np.array(listB, dtype=np.int)
+
+# execution
 
 usingListComprehensionWithZip(listA, listB)
 usingMap(listA, listB)
