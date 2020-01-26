@@ -21,7 +21,8 @@ def generatoreFibonacci(maxValue):
         index = index + 1
         a, b = b, a + b
 
-for i in generatoreFibonacci(1000):
+myGenerator = generatoreFibonacci(10000000000000000000000)
+for i in myGenerator:
     print(f"{i[0]}° = {i[1]}")
     if i[1] > 100:
         break
@@ -38,6 +39,9 @@ for i in myGenerator:
 print(myGenerator)
 print(next(myGenerator))
 print(list(myGenerator))
+
+
+
 
 #-------------------------------------------------------
 # short version: "generator comprehension" vs "list comprehension"
