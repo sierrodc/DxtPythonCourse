@@ -15,7 +15,8 @@ def ritornaOperazioneFactory(tipo: str):
 
 if __name__ == '__main__':
     print(ritornaOperazioneFactory("somma")(2, 3))
-    print(ritornaOperazioneFactory("quadrato")(2))
+    funzioneQuadrato = ritornaOperazioneFactory("quadrato")
+    print(funzioneQuadrato(2))
     # print(ritornaOperazioneFactory("somma")(2))
 
 

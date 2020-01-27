@@ -7,7 +7,7 @@ def simpleGenerator(start, stop, step):
         yield start
         start = start + step
 
-for i in simpleGenerator(0, 10, 2):
+for i in simpleGenerator(0, 10, 2): # === range(0,10,2)
     print(i)
 
 

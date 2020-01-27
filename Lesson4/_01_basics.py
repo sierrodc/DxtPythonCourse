@@ -21,7 +21,8 @@ if __name__ == '__main__':
     print(somma_e_moltiplica(1,2))
 
 # scope!!!
-print(somma(1,2))
+if __name__ == '__main__':
+    print(somma(1,2))
 
 
 # migliora intellisense e documentazione del codice
@@ -60,7 +61,7 @@ def duplicate(parametro:int = 1) -> int:
     return parametro + parametro
 
 if __name__ == '__main__':
-    print(duplicate()))
+    print(duplicate())
     print(duplicate(2))
     print(duplicate("ciao"))
 
