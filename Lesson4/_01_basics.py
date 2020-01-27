@@ -12,6 +12,7 @@ if __name__ == '__main__':
 
 # funzioni accettano e tornano quello che volete (dizionari, set, list, tuple, funzioni, classi ...)
 def somma_e_moltiplica(a, b, c = { 'k1' : 1, 'k2': 1 }):
+    # scope!!!)
     somma = a*c['k1'] + b*c['k2']
     moltiplica = a*c['k1'] * b*c['k2']
     return (somma, moltiplica)
@@ -19,6 +20,8 @@ def somma_e_moltiplica(a, b, c = { 'k1' : 1, 'k2': 1 }):
 if __name__ == '__main__':
     print(somma_e_moltiplica(1,2))
 
+# scope!!!
+print(somma(1,2))
 
 
 # migliora intellisense e documentazione del codice
@@ -57,14 +60,14 @@ def duplicate(parametro:int = 1) -> int:
     return parametro + parametro
 
 if __name__ == '__main__':
-    print(duplicate())
+    print(duplicate()))
     print(duplicate(2))
     print(duplicate("ciao"))
 
 
 
-# *args = parametri indefiniti posizionali (tuple)
-# **kwargs = parametri indefiniti nominali {dict}
+# *args = parametri indefiniti posizionali === (tuple)
+# **kwargs = parametri indefiniti nominali, o keyword arguments === {dict}
 def eseguiAll(parametroNormale, *args, **kwargs):
     print(type(args))
     print(type(kwargs))
@@ -82,7 +85,7 @@ if __name__ == '__main__':
 if __name__ == '__main__':
     # AVANZATO... * e ** sono operatori di "unpacking"
     posizionali = (1,2)
-    nominali = { 'c': 10 } 
+    nominali = { 'c': { 'k1' : 1, 'k2': 1 } } 
     print(somma(*posizionali, **nominali))
 
     #* a volte è utile:
