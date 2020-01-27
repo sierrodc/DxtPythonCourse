@@ -12,7 +12,9 @@ if __name__ == '__main__':
 
 # funzioni accettano e tornano quello che volete (dizionari, set, list, tuple, funzioni, classi ...)
 def somma_e_moltiplica(a, b, c = { 'k1' : 1, 'k2': 1 }):
-    return (a*c['k1'] + b*c['k2'], a*c['k1'] * b*c['k2'])
+    somma = a*c['k1'] + b*c['k2']
+    moltiplica = a*c['k1'] * b*c['k2']
+    return (somma, moltiplica)
 
 if __name__ == '__main__':
     print(somma_e_moltiplica(1,2))
