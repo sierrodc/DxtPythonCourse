@@ -6,30 +6,32 @@
 
 
 class StarObject:
-    total_objects=0
+    total_objects = 0
 
     def __init__(self, position = (0, 0)):
-        self.__position = position
-        self.__speed = (0, 0)
-        self._x = 9
+        StarObject.total_objects = StarObject.total_objects + 1
+        self.position = position
+        self.speed = (0, 0)
     
     def relocate(self, newPosition):
-        self.__position = newPosition
+        self.position = newPosition
 
-    def print(self):
-        print(self._x)
+    def updatePosition(self, elapsedSeconds):
+        #print(list(zip(self.position, speed)))
+        self.position = tuple( pos + speed*elapsedSeconds for pos,speed in zip(self.position, self.speed))
 
+    def __str__(self):
+        return f"Object at {self.position} moving at speed {self.speed}"
 
-class Starship(StarObject):
-    def __init__(self):
-        super().__init__()
-        self._x = 10
     
-    
-    
-ss = Starship()
-print(ss._x)
-ss.print()
+if __name__ == '__main__':
+    so = StarObject()
+    print(f"There is an object at {so.position}")
+    print(so)
+    so.speed = (3, 5)
+    so.updatePosition(2)
+    print(so)
+
 
 
 
