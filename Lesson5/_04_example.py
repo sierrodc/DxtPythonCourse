@@ -27,6 +27,9 @@ model.fit(X_train, Y_train)
 Y_train_pred = model.predict(X_train)
 Y_test_pred = model.predict(X_test)
 
+for c in range(len(model.coef_)):
+    print(f"f{c+1} = {model.coef_[c]:.6f}")
+
 plt.figure()
 plt.title("TRAIN")
 plt.suptitle(f"r^2 on train data : { r2_score(Y_train_pred, Y_train.values) }")
