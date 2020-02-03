@@ -20,6 +20,13 @@ class StarShipFactory(StarShip):
     def __getitem__(self, i): # accedo alla classe con un indice: oggetto[i]
         return self._createdStarShips[i]
 
+    def __len__(self):
+        return len(self._createdStarShips)
+
+    def __next__(self):
+        for ss in self._createdStarShips:
+            yield ss
+
     # statico = non relativo all'istanza, non ha il parametro "self"
     @staticmethod
     def createNewStarShipFactory():
@@ -45,7 +52,11 @@ class DeathStar(StarShipFactory):
 if __name__ == '__main__':
     # static method
     fact = StarShipFactory.createNewStarShipFactory()
-    ss = fact.createStarShip()
+    ss1 = fact.createStarShip()
+    ss2 = fact.createStarShip()
+    print(f"total ships: {len(fact)}")
+    for ss in fact:
+        print(ss)
 
     deathStar = DeathStar()
     fleet = deathStar.createFleet(100)
