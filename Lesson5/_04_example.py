@@ -27,8 +27,8 @@ model.fit(X_train, Y_train)
 Y_train_pred = model.predict(X_train)
 Y_test_pred = model.predict(X_test)
 
-for c in range(len(model.coef_)):
-    print(f"f{c+1} = {model.coef_[c]:.6f}")
+for pos, coefficient in enumerate(model.coef_, start=1):
+    print(f"f{pos} = {coefficient:.6f}")
 
 plt.figure()
 plt.title("TRAIN")
