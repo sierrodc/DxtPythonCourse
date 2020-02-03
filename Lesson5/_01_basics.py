@@ -5,11 +5,11 @@
 # Istanza = una valorizzazione di un oggetto (es: 3, "ciao", [2,3,4]...)
 
 
-class StarObject:
+class SpaceObject:
     total_objects = 0
 
     def __init__(self, position = (0, 0)):
-        StarObject.total_objects = StarObject.total_objects + 1
+        SpaceObject.total_objects = SpaceObject.total_objects + 1
         self.position = position
         self.speed = (0, 0)
     
@@ -25,7 +25,7 @@ class StarObject:
 
     
 if __name__ == '__main__':
-    so = StarObject()
+    so = SpaceObject()
     print(f"There is an object at {so.position}")
     print(so)
     so.speed = (3, 5)

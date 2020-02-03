@@ -1,4 +1,3 @@
-from _01_basics import StarObject
 from _02_Inheritance import StarShip
 
 
@@ -45,7 +44,7 @@ class DeathStar(StarShipFactory):
         return ss
     
     def createFleet(self, quantity):
-        return list(map(lambda idx: self.createStarShip(), range(quantity)))
+        return list(map(lambda idx: self.createStarShip(()), range(quantity)))
         
 
 

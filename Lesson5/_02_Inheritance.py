@@ -1,6 +1,6 @@
-from _01_basics import StarObject
+from _01_basics import SpaceObject
 
-class StarShip(StarObject):
+class StarShip(SpaceObject):
     def __init__(self, position=(0,0)):
         super().__init__(position=position)
         self.acceleration = (0, 0)
