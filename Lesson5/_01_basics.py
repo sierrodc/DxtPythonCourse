@@ -26,12 +26,12 @@ class SpaceObject:
     
 if __name__ == '__main__':
     so = SpaceObject()
+    so2 = SpaceObject()
+    
     print(f"There is an object at {so.position}")
     print(so)
     so.speed = (3, 5)
     so.updatePosition(2)
     print(so)
-
-
-
-
+    print(so2)
+    print(SpaceObject.total_objects)
