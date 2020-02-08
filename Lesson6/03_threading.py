@@ -57,11 +57,10 @@ def runThreads():
     t1.join()
     t2.join()
 
-if __name__ == '__main__':
-    runThreads()
+runThreads()
 
-if __name__ == '__main__':
-    print("------ method 1: ThreadPoolExecutor ------")
+
+print("------ method 1: ThreadPoolExecutor ------")
 
 import concurrent.futures
 @StampaTempoFunzione
@@ -73,11 +72,10 @@ def usingMultiThread():
         result2 = future2.result()
         print("done with ThreadPoolExecutor")
 
-if __name__ == '__main__':
-    usingMultiThread()
+usingMultiThread()
 
-if __name__ == '__main__':
-    print("------ method 2: ProcessPoolExecutor ------")
+
+print("------ method 2: ProcessPoolExecutor ------")
 
 import concurrent.futures
 @StampaTempoFunzione
@@ -89,5 +87,4 @@ def usingMultiProcess():
         result2 = future2.result()
         print("done with ProcessPoolExecutor")
 
-if __name__ == '__main__':
-    usingMultiProcess()
+usingMultiProcess()
