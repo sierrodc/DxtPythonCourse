@@ -10,11 +10,12 @@ from pandas.tseries.offsets import BDay
 import datetime
 
 from tiingo import TiingoClient # documentation here: https://pypi.org/project/tiingo/
+# alternative: https://www.quandl.com/
 import warnings
 warnings.filterwarnings('ignore') #ignore tiingo warnings
 
 
-tcl = TiingoClient({ 'api_key': 'b2ca7ff28f2bdc6952d7e14b7c27d6f84604a62e' })
+tcl = TiingoClient({ 'api_key': 'b2ca7ff28f2bdc6952d7e14b7c27d6f84604a62e666f2e' })
 #print(tcl.get_ticker_metadata("GOOGL")) # information about the ticker
 
 # get open, close, high, low, volume + adj_x, 
